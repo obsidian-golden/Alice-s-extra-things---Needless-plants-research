@@ -5,7 +5,7 @@
 		<defName>PLRBasic</defName>
 		<label>research plants basic</label>
 		<techLevel>Neolithic</techLevel>
-		<description>Start discovering sowing and groing crops.</description>
+		<description>Start discovering sowing and groing more basic crops.</description>
 		<baseCost>250</baseCost>
 		<researchViewX>1.00</researchViewX>
 		<researchViewY>4.90</researchViewY>
