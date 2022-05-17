@@ -5,12 +5,21 @@
 		<success>Always</success>
 
 		<operations>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
-        <value>
-          <prerequisites />
-        </value>
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationTest">
+            <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/prerequisites</xpath>
+            <success>Invert</success>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
+            <value>
+              <prerequisites />
+            </value>
+          </li>
+        </operations>
       </li>
+
 
       <li Class="PatchOperationAdd">
         <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/prerequisites</xpath>
