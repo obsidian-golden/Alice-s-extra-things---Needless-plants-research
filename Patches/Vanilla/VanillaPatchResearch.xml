@@ -24,7 +24,7 @@
       <li Class="PatchOperationAdd">
         <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/prerequisites</xpath>
         <value>
-          <li>PLRBasic</li>
+          <li>PLRSlowPlants</li>
         </value>
       </li>
 		</operations>

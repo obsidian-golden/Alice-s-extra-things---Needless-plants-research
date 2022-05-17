@@ -8,30 +8,50 @@
           <!-- rice -->
           <operations>
             <li Class="PatchOperationTest">
-              <xpath>Defs/ThingDef[defName="Plant_Rice"]/sowResearchPrerequisites</xpath>
+              <xpath>Defs/ThingDef[defName="Plant_Rice"]/plant/sowResearchPrerequisites</xpath>
               <success>Invert</success>
             </li>
 
             <li Class="PatchOperationAdd">
-              <xpath>Defs/ThingDef[defName="Plant_Rice"]</xpath>
+              <xpath>Defs/ThingDef[defName="Plant_Rice"]/plant</xpath>
               <value>
                 <sowResearchPrerequisites />
               </value>
             </li>
 
             <li Class="PatchOperationAdd">
-              <xpath>Defs/ThingDef[defName="Plant_Rice"]/sowResearchPrerequisites</xpath>
+              <xpath>Defs/ThingDef[defName="Plant_Rice"]/plant/sowResearchPrerequisites</xpath>
               <value>
-                <li>
-                  PLRBasic
-                </li>
+                <li>PLRBasic</li>
+              </value>
+            </li>
+          </operations>
+        </li>
+        <li Clas
+          ="PatchOperationSequence">
+          <!-- corn -->
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="Plant_Corn"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Corn"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Corn"]/plant/sowResearchPrerequisites</xpath>
+              <value>
+                <li>PLRSlowPlants</li>
               </value>
             </li>
           </operations>
         </li>
 
       </operations>
-
   </Operation>
-
 </Patch>
