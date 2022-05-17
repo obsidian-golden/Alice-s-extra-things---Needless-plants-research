@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>PLRBasic</defName>
+		<label>research plants basic</label>
+		<techLevel>Neolithic</techLevel>
+		<description>Start discovering sowing and groing crops.</description>
+		<baseCost>250</baseCost>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>4.90</researchViewY>
+	</ResearchProjectDef>
+
+  <ResearchProjectDef>
+		<defName>PLRFastPlants</defName>
+		<label>research fast plants</label>
+		<techLevel>Neolithic</techLevel>
+		<description>Unlock fast growing, low yeld plants.</description>
+		<baseCost>250</baseCost>
+    <prerequisites>
+      <li>PLRBasic</li>
+    </prerequisites>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>4.90</researchViewY>
+	</ResearchProjectDef>
+
+  <ResearchProjectDef>
+		<defName>PLRSlowPlants</defName>
+		<label>research slow plants</label>
+		<techLevel>Neolithic</techLevel>
+		<description>Unlock slow growing, high yeld plants.</description>
+		<baseCost>250</baseCost>
+    <prerequisites>
+      <li>PLRBasic</li>
+    </prerequisites>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>4.90</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

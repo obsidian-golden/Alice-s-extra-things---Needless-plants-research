@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+				<operations>
+
+          <li Class="PatchOperationSequence">
+            <operations>
+
+          <li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Plant_Rice"]</xpath>
+						<value>
+							<sowResearchPrerequisites />
+						</value>
+					</li>
+
+          <li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Plant_Corn"]</xpath>
+						<value>
+							<sowResearchPrerequisites />
+						</value>
+					</li>
+        </operations>
+      </li>
+      <li Class="PatchOperationSequence">
+        <operations>
+        	<!-- add research requirements -->
+
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Plant_Rice"]/sowResearchPrerequisites</xpath>
+            <value>
+              <li>PLRFastPlants</li>
+            </value>
+          </li>
+
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Plant_Corn"]/sowResearchPrerequisites</xpath>
+            <value>
+              <li>PLRSlowPlants</li>
+            </value>
+          </li>
+          </operations>
+        </li>
+
+        </operations>
+
+      </Operation>
+
+</Patch>
