@@ -16,7 +16,7 @@
 		<defName>PLRFeed</defName>
 		<label>research animal feed</label>
 		<tab>PLRReseachTab</tab>
-		<techLevel>Neolithic</techLevel>
+		<techLevel>Medieval</techLevel>
 		<description>Unlock animal feed crops, alowing more advanced ranching.</description>
 		<baseCost>250</baseCost>
 		<prerequisites>
@@ -30,7 +30,7 @@
 		<defName>PLRSlow</defName>
 		<label>Slow grown plants</label>
 		<tab>PLRReseachTab</tab>
-		<techLevel>Neolithic</techLevel>
+		<techLevel>Medieval</techLevel>
 		<description>Unlock slow growing, high yeld plants.</description>
 		<baseCost>500</baseCost>
     <prerequisites>
@@ -45,6 +45,9 @@
 		<label>Textiles crops</label>
 		<tab>PLRReseachTab</tab>
 		<techLevel>Medieval</techLevel>
+		<tags>
+      <li>ClassicStart</li>
+    </tags>
 		<description>Unlock textile,non-food plants.</description>
 		<baseCost>500</baseCost>
 		<prerequisites>
@@ -86,7 +89,10 @@
 		<defName>PLRHerbalMedicine</defName>
 		<label>Herbal medicine</label>
 		<tab>PLRReseachTab</tab>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Neolithic</techLevel>
+		<tags>
+      <li>TribalStart</li>
+    </tags>
 		<description>Discover the srecrets to medicinal plants.</description>
 		<baseCost>750</baseCost>
 		<prerequisites>

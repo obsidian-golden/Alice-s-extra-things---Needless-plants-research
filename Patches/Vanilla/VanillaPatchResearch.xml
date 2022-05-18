@@ -35,6 +35,13 @@
         </value>
       </li>
 
+      <li Class="PatchOperationAttributeRemove">
+        <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/tags</xpath>
+        <value>
+          <li>TribalStart</li>
+        </value>
+      </li>
+
       <!-- devilstrand -->
       <li Class="PatchOperationSequence">
         <operations>
