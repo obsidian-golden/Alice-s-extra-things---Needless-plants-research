@@ -35,10 +35,10 @@
         </value>
       </li>
 
-      <li Class="PatchOperationAttributeRemove">
+      <li Class="PatchOperationReplace">
         <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/tags</xpath>
         <value>
-          <li>TribalStart</li>
+          <tags />
         </value>
       </li>
 
