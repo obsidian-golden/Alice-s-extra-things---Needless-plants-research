@@ -21,22 +21,6 @@
         </operations>
       </li>
 
-      <li Class="PatchOperationSequence">
-        <operations>
-          <li Class="PatchOperationTest">
-            <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/tab</xpath>
-            <success>Invert</success>
-          </li>
-          <li Class="PatchOperationAdd">
-            <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
-            <value>
-              <tab />
-            </value>
-          </li>
-        </operations>
-      </li>
-
-
       <li Class="PatchOperationAdd">
         <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/prerequisites</xpath>
         <value>
@@ -45,48 +29,42 @@
       </li>
 
       <li Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/tab</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/baseCost</xpath>
         <value>
-          <tab>PLRReseachTab</tab>
+          <baseCost>750</baseCost>
         </value>
       </li>
 
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/researchViewX</xpath>
-        <value>
-          <researchViewX>2</researchViewX>
-        </value>
-      </li>
-
-      <!-- cocoa plant -->
+      <!-- devilstrand -->
       <li Class="PatchOperationSequence">
         <operations>
           <li Class="PatchOperationTest">
-            <xpath>Defs/ResearchProjectDef[defName="Cocoa"]/tab</xpath>
+            <xpath>Defs/ResearchProjectDef[defName="Devilstrand"]/prerequisites</xpath>
             <success>Invert</success>
           </li>
           <li Class="PatchOperationAdd">
-            <xpath>Defs/ResearchProjectDef[defName="Cocoa"]</xpath>
+            <xpath>Defs/ResearchProjectDef[defName="Devilstrand"]</xpath>
             <value>
-              <tab />
+              <prerequisites />
             </value>
           </li>
         </operations>
       </li>
 
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Cocoa"]/tab</xpath>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ResearchProjectDef[defName="Devilstrand"]/prerequisites</xpath>
         <value>
-          <tab>PLRReseachTab</tab>
+          <li>PLRTextiles</li>
         </value>
       </li>
 
       <li Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="Cocoa"]/researchViewX</xpath>
+        <xpath>Defs/ResearchProjectDef[defName="Devilstrand"]/baseCost</xpath>
         <value>
-          <researchViewX>3</researchViewX>
+          <baseCost>750</baseCost>
         </value>
       </li>
+
 
 		</operations>
 	</Operation>

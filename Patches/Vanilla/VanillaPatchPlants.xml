@@ -28,6 +28,31 @@
             </li>
           </operations>
         </li>
+
+        <!-- strawberry -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="Plant_Strawberry"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Strawberry"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Strawberry"]/plant/sowResearchPrerequisites</xpath>
+              <value>
+                <li>PLRBasic</li>
+              </value>
+            </li>
+          </operations>
+        </li>
+
         <!-- hay -->
         <li Class="PatchOperationSequence">
           <operations>
@@ -75,6 +100,54 @@
           </operations>
         </li>
 
+        <!-- smokeleaf -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="Plant_Smokeleaf"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Smokeleaf"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Smokeleaf"]/plant/sowResearchPrerequisites</xpath>
+              <value>
+                <li>PLRWeakDrugs</li>
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <!-- hops -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="Plant_Hops"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Hops"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Hops"]/plant/sowResearchPrerequisites</xpath>
+              <value>
+                <li>PLRWeakDrugs</li>
+              </value>
+            </li>
+          </operations>
+        </li>
+
         <!-- cotton -->
         <li Class="PatchOperationSequence">
           <operations>
@@ -94,6 +167,54 @@
               <xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/sowResearchPrerequisites</xpath>
               <value>
                 <li>PLRTextiles</li>
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <!-- psychoid -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="Plant_Psychoid"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Psychoid"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Psychoid"]/plant/sowResearchPrerequisites</xpath>
+              <value>
+                <li>PLRHardDrugs</li>
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <!-- healroot -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Healroot"]/plant/sowResearchPrerequisites</xpath>
+              <value>
+                <li>PLRHerbalMedicine</li>
               </value>
             </li>
           </operations>

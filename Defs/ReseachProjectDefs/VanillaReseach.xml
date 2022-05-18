@@ -54,4 +54,46 @@
 		<researchViewY>0.75</researchViewY>
 	</ResearchProjectDef>
 
+	<ResearchProjectDef>
+		<defName>PLRWeakDrugs</defName>
+		<label>Weak drug crops</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Unlock recreational,low risk drug plants.</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>PLRBasic</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PLRHardDrugs</defName>
+		<label>Hard drug crops</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Unlock harder,more powerfull drug plants.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>PLRWeakDrugs</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PLRHerbalMedicine</defName>
+		<label>Herbal medicine</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Discover the srecrets to medicinal plants.</description>
+		<baseCost>750</baseCost>
+		<prerequisites>
+			<li>PLRBasic</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2.25</researchViewY>
+	</ResearchProjectDef>
+
 </Defs>
