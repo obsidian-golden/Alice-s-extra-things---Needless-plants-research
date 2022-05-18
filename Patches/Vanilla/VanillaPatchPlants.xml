@@ -27,8 +27,7 @@
             </li>
           </operations>
         </li>
-        <li Clas
-          ="PatchOperationSequence">
+        <li Class="PatchOperationSequence">
           <!-- corn -->
           <operations>
             <li Class="PatchOperationTest">
