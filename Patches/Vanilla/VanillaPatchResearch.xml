@@ -5,6 +5,7 @@
 		<success>Always</success>
 
 		<operations>
+      <!-- tree sowing -->
       <li Class="PatchOperationSequence">
         <operations>
           <li Class="PatchOperationTest">
@@ -20,13 +21,73 @@
         </operations>
       </li>
 
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationTest">
+            <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/tab</xpath>
+            <success>Invert</success>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]</xpath>
+            <value>
+              <tab />
+            </value>
+          </li>
+        </operations>
+      </li>
+
 
       <li Class="PatchOperationAdd">
         <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/prerequisites</xpath>
         <value>
-          <li>PLRSlowPlants</li>
+          <li>PLRSlow</li>
         </value>
       </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/tab</xpath>
+        <value>
+          <tab>PLRReseachTab</tab>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/researchViewX</xpath>
+        <value>
+          <researchViewX>2</researchViewX>
+        </value>
+      </li>
+
+      <!-- cocoa plant -->
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationTest">
+            <xpath>Defs/ResearchProjectDef[defName="Cocoa"]/tab</xpath>
+            <success>Invert</success>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ResearchProjectDef[defName="Cocoa"]</xpath>
+            <value>
+              <tab />
+            </value>
+          </li>
+        </operations>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Cocoa"]/tab</xpath>
+        <value>
+          <tab>PLRReseachTab</tab>
+        </value>
+      </li>
+
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="Cocoa"]/researchViewX</xpath>
+        <value>
+          <researchViewX>3</researchViewX>
+        </value>
+      </li>
+
 		</operations>
 	</Operation>
 

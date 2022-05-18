@@ -4,8 +4,9 @@
     <success>Always</success>
       <operations>
         <!-- all diferent plants -->
+
+        <!-- rice -->
         <li Class="PatchOperationSequence">
-          <!-- rice -->
           <operations>
             <li Class="PatchOperationTest">
               <xpath>Defs/ThingDef[defName="Plant_Rice"]/plant/sowResearchPrerequisites</xpath>
@@ -27,8 +28,31 @@
             </li>
           </operations>
         </li>
+        <!-- hay -->
         <li Class="PatchOperationSequence">
-          <!-- corn -->
+          <operations>
+          <li Class="PatchOperationTest">
+            <xpath>Defs/ThingDef[defName="Plant_Haygrass"]/plant/sowResearchPrerequisites</xpath>
+            <success>Invert</success>
+          </li>
+
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Plant_Haygrass"]/plant</xpath>
+            <value>
+              <sowResearchPrerequisites />
+            </value>
+          </li>
+
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Plant_Haygrass"]/plant/sowResearchPrerequisites</xpath>
+            <value>
+              <li>PLRFeed</li>
+            </value>
+          </li>
+        </operations>
+      </li>
+        <!-- corn -->
+        <li Class="PatchOperationSequence">
           <operations>
             <li Class="PatchOperationTest">
               <xpath>Defs/ThingDef[defName="Plant_Corn"]/plant/sowResearchPrerequisites</xpath>
@@ -45,7 +69,31 @@
             <li Class="PatchOperationAdd">
               <xpath>Defs/ThingDef[defName="Plant_Corn"]/plant/sowResearchPrerequisites</xpath>
               <value>
-                <li>PLRSlowPlants</li>
+                <li>PLRSlow</li>
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <!-- cotton -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Cotton"]/plant/sowResearchPrerequisites</xpath>
+              <value>
+                <li>PLRTextiles</li>
               </value>
             </li>
           </operations>

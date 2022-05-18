@@ -3,18 +3,32 @@
 
 	<ResearchProjectDef>
 		<defName>PLRBasic</defName>
-		<label>research plants basic</label>
+		<label>research basic plants</label>
 		<tab>PLRReseachTab</tab>
 		<techLevel>Neolithic</techLevel>
-		<description>Start discovering sowing and groing more basic crops.</description>
+		<description>Start discovering, sowing and groing more advanced crops.</description>
 		<baseCost>250</baseCost>
-		<researchViewX>1.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PLRFeed</defName>
+		<label>research animal feed</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Neolithic</techLevel>
+		<description>Unlock animal feed crops, alowing more advanced ranching.</description>
+		<baseCost>250</baseCost>
+		<prerequisites>
+      <li>PLRBasic</li>
+    </prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0.75</researchViewY>
 	</ResearchProjectDef>
 
   <ResearchProjectDef>
-		<defName>PLRSlowPlants</defName>
-		<label>research slow plants</label>
+		<defName>PLRSlow</defName>
+		<label>Slow grown plants</label>
 		<tab>PLRReseachTab</tab>
 		<techLevel>Neolithic</techLevel>
 		<description>Unlock slow growing, high yeld plants.</description>
@@ -22,8 +36,22 @@
     <prerequisites>
       <li>PLRBasic</li>
     </prerequisites>
-		<researchViewX>2.00</researchViewX>
-		<researchViewY>1.00</researchViewY>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PLRTextiles</defName>
+		<label>Textiles crops</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Unlock textile,non-food plants.</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+			<li>PLRBasic</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0.75</researchViewY>
 	</ResearchProjectDef>
 
 </Defs>
