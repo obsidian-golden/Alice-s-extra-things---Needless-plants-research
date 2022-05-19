@@ -4,5 +4,6 @@
 		<li>1.3</li>
 		<li IfModActive="VanillaExpanded.VPlantsE">1.3/Mods/VPE</li>
     <li IfModActive="VanillaExpanded.VPlantsE_copy">1.3/Mods/VPE</li>
+    <li IfModActive="VanillaExpanded.VPlantsEMore">1.3/Mods/VPEMore</li>
 	</v1.3>
 </loadFolders>

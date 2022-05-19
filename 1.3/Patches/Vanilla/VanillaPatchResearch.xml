@@ -24,8 +24,7 @@
       <li Class="PatchOperationAdd">
         <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/prerequisites</xpath>
         <value>
-          <li>PLRSlow</li>
-          <li>PLRAdvanced</li>
+          <li>PLRBasic</li>
         </value>
       </li>
 
@@ -33,13 +32,6 @@
         <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/baseCost</xpath>
         <value>
           <baseCost>750</baseCost>
-        </value>
-      </li>
-
-      <li Class="PatchOperationReplace">
-        <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/tags</xpath>
-        <value>
-          <tags />
         </value>
       </li>
 

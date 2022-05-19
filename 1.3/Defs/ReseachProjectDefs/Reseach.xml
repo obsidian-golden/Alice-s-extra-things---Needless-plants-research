@@ -44,7 +44,7 @@
 		<defName>PLRVeryResistent</defName>
 		<label>More resilient plants</label>
 		<tab>PLRReseachTab</tab>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Neolithic</techLevel>
 		<description>Unlock even more resistent plants, alowing cultivation in more extreme biomes.</description>
 		<baseCost>500</baseCost>
 		<prerequisites>
@@ -55,6 +55,20 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
+		<defName>PLRCoWorking</defName>
+		<label>Co-working plants</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Unlock co-working plants, they are better with something else than alone.</description>
+		<baseCost>750</baseCost>
+		<prerequisites>
+      <li>PLRAdvanced</li>
+    </prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
 		<defName>PLRFeed</defName>
 		<label>research animal feed</label>
 		<tab>PLRReseachTab</tab>
@@ -62,7 +76,7 @@
 		<description>Unlock animal feed crops, alowing more advanced ranching.</description>
 		<baseCost>250</baseCost>
 		<prerequisites>
-      <li>PLRAdvanced</li>
+      <li>PLRBasic</li>
     </prerequisites>
 		<researchViewX>0</researchViewX>
 		<researchViewY>2.25</researchViewY>
@@ -93,7 +107,7 @@
 		<description>Unlock textile,non-food plants.</description>
 		<baseCost>500</baseCost>
 		<prerequisites>
-			<li>PLRAdvanced</li>
+			<li>PLRBasic</li>
 		</prerequisites>
 		<researchViewX>1</researchViewX>
 		<researchViewY>0.75</researchViewY>
@@ -163,15 +177,71 @@
 		<defName>PLRFruitTrees</defName>
 		<label>Fruit trees</label>
 		<tab>PLRReseachTab</tab>
-		<techLevel>Neolithic</techLevel>
+		<techLevel>Medieval</techLevel>
 		<description>Unlock trees that give multiple harverts for a long time.</description>
 		<baseCost>1000</baseCost>
 		<prerequisites>
-			<li>PLRMultiHarvest</li>
 			<li>TreeSowing</li>
 		</prerequisites>
 		<researchViewX>2</researchViewX>
 		<researchViewY>0.75</researchViewY>
 	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PLRBulkProduction</defName>
+		<label>Bulk crops</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Unlock plants focused in mass production.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>PLRAdvanced</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2.25</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PLRChemicalProduction</defName>
+		<label>Chemical crops</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Unlock plants focused in chemical materials.</description>
+		<baseCost>1500</baseCost>
+		<prerequisites>
+			<li>PLRAdvanced</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PLRSandPlants</defName>
+		<label>Sand crops</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Unlock sand growing plants.</description>
+		<baseCost>750</baseCost>
+		<prerequisites>
+			<li>PLRResistent</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+
+		<ResearchProjectDef>
+			<defName>PLRWaterPlants</defName>
+			<label>Water crops</label>
+			<tab>PLRReseachTab</tab>
+			<techLevel>Medieval</techLevel>
+			<description>Unlock water growing plants.</description>
+			<baseCost>750</baseCost>
+			<prerequisites>
+				<li>PLRResistent</li>
+			</prerequisites>
+			<researchViewX>3</researchViewX>
+			<researchViewY>0.75</researchViewY>
+		</ResearchProjectDef>
 
 </Defs>
