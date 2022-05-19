@@ -23,7 +23,7 @@
             <li Class="PatchOperationAdd">
               <xpath>Defs/ThingDef[defName="Plant_Rice"]/plant/sowResearchPrerequisites</xpath>
               <value>
-                <li>PLRBasic</li>
+                <li>PLRAdvanced</li>
               </value>
             </li>
           </operations>

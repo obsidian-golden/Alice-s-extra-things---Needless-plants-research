@@ -25,6 +25,7 @@
         <xpath>Defs/ResearchProjectDef[defName="TreeSowing"]/prerequisites</xpath>
         <value>
           <li>PLRSlow</li>
+          <li>PLRAdvanced</li>
         </value>
       </li>
 
@@ -62,6 +63,7 @@
         <xpath>Defs/ResearchProjectDef[defName="Devilstrand"]/prerequisites</xpath>
         <value>
           <li>PLRTextiles</li>
+          <li>PLRAdvanced</li>
         </value>
       </li>
 

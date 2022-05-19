@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+      <operations>
+        <!-- all diferent plants -->
+
+        <!-- VPE grass and tall grass -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Grass" or defName="VCE_TallGrass"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Grass" or defName="VCE_TallGrass"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Grass" or defName="VCE_TallGrass"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRFeed</li>
+          </value>
+        </li>
+
+        <!-- VPE agave -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Agave"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Agave"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Agave"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRBasic</li>
+          </value>
+        </li>
+
+        <!-- VPE onion-->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Onion"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Onion"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Onion"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRResistent</li>
+          </value>
+        </li>
+
+        <!-- VPE pumpkin-->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Pumpkin"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Pumpkin"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Pumpkin"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRBasic</li>
+          </value>
+        </li>
+
+        <!-- VPE pepper-->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Pepper"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Pepper"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Pepper"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRAdvanced</li>
+          </value>
+        </li>
+
+        <!-- VPE peas-->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Peas"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Peas"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Peas"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRAdvanced</li>
+          </value>
+        </li>
+
+        <!-- VPE eggplant-->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Eggplant"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Eggplant"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Eggplant"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRVeryResistent</li>
+          </value>
+        </li>
+
+        <!-- VPE cabbage-->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Cabbage"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Cabbage"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Cabbage"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRVeryResistent</li>
+          </value>
+        </li>
+
+        <!-- VPE beet-->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Beet"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Beet"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Beet"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRVeryResistent</li>
+          </value>
+        </li>
+
+        <!-- VPE tomato-->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Tomato"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Tomato"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Tomato"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRMultiHarvest</li>
+          </value>
+        </li>
+
+      </operations>
+  </Operation>
+</Patch>

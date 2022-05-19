@@ -6,10 +6,52 @@
 		<label>research basic plants</label>
 		<tab>PLRReseachTab</tab>
 		<techLevel>Neolithic</techLevel>
-		<description>Start discovering, sowing and groing more advanced crops.</description>
+		<description>Start discovering, sowing and groing some basic crops.</description>
 		<baseCost>250</baseCost>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PLRAdvanced</defName>
+		<label>research advanced plants</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Start discovering, sowing and groing more advanced and specialized crops.</description>
+		<baseCost>750</baseCost>
+		<prerequisites>
+			<li>PLRBasic</li>
+		</prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0.75</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PLRResistent</defName>
+		<label>Resilient plants</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Unlock more resistent plant types.</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+      <li>PLRBasic</li>
+    </prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PLRVeryResistent</defName>
+		<label>More resilient plants</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Unlock even more resistent plants, alowing cultivation in more extreme biomes.</description>
+		<baseCost>500</baseCost>
+		<prerequisites>
+      <li>PLRResistent</li>
+    </prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2.25</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -20,10 +62,10 @@
 		<description>Unlock animal feed crops, alowing more advanced ranching.</description>
 		<baseCost>250</baseCost>
 		<prerequisites>
-      <li>PLRBasic</li>
+      <li>PLRAdvanced</li>
     </prerequisites>
 		<researchViewX>0</researchViewX>
-		<researchViewY>0.75</researchViewY>
+		<researchViewY>2.25</researchViewY>
 	</ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -51,7 +93,7 @@
 		<description>Unlock textile,non-food plants.</description>
 		<baseCost>500</baseCost>
 		<prerequisites>
-			<li>PLRBasic</li>
+			<li>PLRAdvanced</li>
 		</prerequisites>
 		<researchViewX>1</researchViewX>
 		<researchViewY>0.75</researchViewY>
@@ -80,6 +122,7 @@
 		<baseCost>1000</baseCost>
 		<prerequisites>
 			<li>PLRWeakDrugs</li>
+			<li>PLRAdvanced</li>
 		</prerequisites>
 		<researchViewX>2</researchViewX>
 		<researchViewY>1.5</researchViewY>
@@ -98,8 +141,37 @@
 		<prerequisites>
 			<li>PLRBasic</li>
 		</prerequisites>
-		<researchViewX>1</researchViewX>
-		<researchViewY>2.25</researchViewY>
+		<researchViewX>0</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PLRMultiHarvest</defName>
+		<label>Multiple harvests</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Neolithic</techLevel>
+		<description>Unlock plants that give multiple harverts.</description>
+		<baseCost>750</baseCost>
+		<prerequisites>
+			<li>PLRSlow</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PLRFruitTrees</defName>
+		<label>Fruit trees</label>
+		<tab>PLRReseachTab</tab>
+		<techLevel>Neolithic</techLevel>
+		<description>Unlock trees that give multiple harverts for a long time.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>PLRMultiHarvest</li>
+			<li>TreeSowing</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0.75</researchViewY>
 	</ResearchProjectDef>
 
 </Defs>
