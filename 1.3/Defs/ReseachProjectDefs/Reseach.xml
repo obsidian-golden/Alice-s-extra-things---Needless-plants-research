@@ -244,4 +244,33 @@
 			<researchViewY>0.75</researchViewY>
 		</ResearchProjectDef>
 
+		<ResearchProjectDef>
+			<defName>PLRFlourPlants</defName>
+			<label>Flour crops</label>
+			<tab>PLRReseachTab</tab>
+			<techLevel>Medieval</techLevel>
+			<description>Unlock flour making crops.</description>
+			<baseCost>1000</baseCost>
+			<prerequisites>
+				<li>PLRBulkProduction</li>
+			</prerequisites>
+			<researchViewX>3</researchViewX>
+			<researchViewY>1.5</researchViewY>
+		</ResearchProjectDef>
+
+		<ResearchProjectDef>
+			<defName>PLRSpicesPlants</defName>
+			<label>Spices</label>
+			<tab>PLRReseachTab</tab>
+			<techLevel>Neolithic</techLevel>
+			<description>Unlock spice crops,gota make that trade route.</description>
+			<baseCost>1500</baseCost>
+			<prerequisites>
+				<li>PLRBasic</li>
+			</prerequisites>
+			<researchViewX>3</researchViewX>
+			<researchViewY>1.5</researchViewY>
+		</ResearchProjectDef>
+
+
 </Defs>

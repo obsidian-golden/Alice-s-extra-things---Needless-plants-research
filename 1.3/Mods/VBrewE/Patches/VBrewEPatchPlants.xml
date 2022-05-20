@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+
+		<operations>
+
+      <!-- VBE coffe -->
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationTest">
+            <xpath>Defs/ThingDef[defName="VBE_Plant_Coffee"]/plant/sowResearchPrerequisites</xpath>
+            <success>Invert</success>
+          </li>
+
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VBE_Plant_Coffee"]/plant</xpath>
+            <value>
+              <sowResearchPrerequisites />
+            </value>
+          </li>
+        </operations>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="VBE_Plant_Coffee"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>PLRWeakDrugs</li>
+        </value>
+      </li>
+
+      <!-- VBE tea -->
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationTest">
+            <xpath>Defs/ThingDef[defName="VBE_Plant_Tea"]/plant/sowResearchPrerequisites</xpath>
+            <success>Invert</success>
+          </li>
+
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VBE_Plant_Tea"]/plant</xpath>
+            <value>
+              <sowResearchPrerequisites />
+            </value>
+          </li>
+        </operations>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="VBE_Plant_Tea"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>PLRBasic</li>
+        </value>
+      </li>
+
+      <!-- VBE tobacco -->
+      <li Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationTest">
+            <xpath>Defs/ThingDef[defName="VBE_Plant_Tobacco"]/plant/sowResearchPrerequisites</xpath>
+            <success>Invert</success>
+          </li>
+
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VBE_Plant_Tobacco"]/plant</xpath>
+            <value>
+              <sowResearchPrerequisites />
+            </value>
+          </li>
+        </operations>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="VBE_Plant_Tobacco"]/plant/sowResearchPrerequisites</xpath>
+        <value>
+          <li>PLRHardDrugs</li>
+        </value>
+      </li>
+
+    </operations>
+  </Operation>
+</Patch>

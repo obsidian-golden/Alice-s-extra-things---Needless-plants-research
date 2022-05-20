@@ -6,6 +6,9 @@
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>VanillaExpanded.VPlantsE</li>
     <li>VanillaExpanded.VPlantsEMore</li>
+    <li>VanillaExpanded.VCookE</li>
+    <li>VanillaExpanded.VBrewE</li>
+    <li>VanillaExpanded.VBrewECandT</li>
 	</loadAfter>
   <packageId>AliceNotWaifu.plantsReseach</packageId>
   <supportedVersions>
@@ -13,6 +16,10 @@
   </supportedVersions>
   <description>
     This mod add needless research prerequisites to nearly all growable vanilla plant
+    v:1.0.3
+      -Aded Vanilla Cooking Expanded and Vanilla Brewing Expanded patches
+    v:1.0.2
+      -Added Vanilla Plants Expanded More patch
     v:1.0.1
       -Added Vanilla Plants Expanded patch
   </description>

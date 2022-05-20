@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VanillaExpanded.VBrewECandT</li>
+      <li>VanillaExpanded.VBrewECandT_copy</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+        <!-- VBE mint -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VBE_MintPlant"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VBE_MintPlant"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VBE_MintPlant]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRSpicesPlants</li>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>

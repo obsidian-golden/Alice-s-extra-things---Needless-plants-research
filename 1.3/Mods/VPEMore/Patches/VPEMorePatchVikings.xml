@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>OskarPotocki.VFE.Vikings</li>
+      <li>OskarPotocki.VFE.Vikings_copy</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+        <!-- VPEMore blueberry -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Blueberry"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Blueberry"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Blueberry"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRCoWorking</li>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>
