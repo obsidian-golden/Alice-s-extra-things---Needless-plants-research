@@ -2,8 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>VanillaExpanded.VBrewECandT</li>
-      <li>VanillaExpanded.VBrewECandT_copy</li>
+			<li>VanillaExpanded.VCookE</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">

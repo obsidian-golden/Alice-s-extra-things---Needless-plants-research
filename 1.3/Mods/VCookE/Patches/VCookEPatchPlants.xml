@@ -77,6 +77,104 @@
           </value>
         </li>
 
+        <!-- VPEMore barley -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Barley"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Barley"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Barley"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRFlourPlants</li>
+          </value>
+        </li>
+
+        <!-- VPEMore sorghum -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Sorghum"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Sorghum"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Sorghum"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRFlourPlants</li>
+          </value>
+        </li>
+
+        <!-- VPEMore rye -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Rye"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Rye"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Rye"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRFlourPlants</li>
+            <li>PLRSandPlants</li>
+          </value>
+        </li>
+
+        <!-- VPEMore oats -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VCE_Oats"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VCE_Oats"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VCE_Oats"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRFlourPlants</li>
+          </value>
+        </li>
+
+
       </operations>
   </Operation>
 </Patch>

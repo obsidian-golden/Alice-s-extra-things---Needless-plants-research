@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+      <operations>
+        <!-- all diferent plants -->
+
+        <!-- VFE poppy -->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VFEC_Plant_Poppy"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VFEC_Plant_Poppy"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEC_Plant_Poppy"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRHardDrugs</li>
+          </value>
+        </li>
+
+      </operations>
+  </Operation>
+</Patch>

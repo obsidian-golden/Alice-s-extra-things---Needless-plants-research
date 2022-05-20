@@ -174,20 +174,6 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>PLRFruitTrees</defName>
-		<label>Fruit trees</label>
-		<tab>PLRReseachTab</tab>
-		<techLevel>Medieval</techLevel>
-		<description>Unlock trees that give multiple harverts for a long time.</description>
-		<baseCost>1000</baseCost>
-		<prerequisites>
-			<li>TreeSowing</li>
-		</prerequisites>
-		<researchViewX>2</researchViewX>
-		<researchViewY>0.75</researchViewY>
-	</ResearchProjectDef>
-
-	<ResearchProjectDef>
 		<defName>PLRBulkProduction</defName>
 		<label>Bulk crops</label>
 		<tab>PLRReseachTab</tab>
@@ -268,8 +254,8 @@
 			<prerequisites>
 				<li>PLRBasic</li>
 			</prerequisites>
-			<researchViewX>3</researchViewX>
-			<researchViewY>1.5</researchViewY>
+			<researchViewX>2</researchViewX>
+			<researchViewY>0.75</researchViewY>
 		</ResearchProjectDef>
 
 

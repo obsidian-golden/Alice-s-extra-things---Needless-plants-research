@@ -413,30 +413,6 @@
           </value>
         </li>
 
-        <!-- VPEMore taro -->
-        <li Class="PatchOperationSequence">
-          <operations>
-            <li Class="PatchOperationTest">
-              <xpath>Defs/ThingDef[defName="VCE_Taro"]/plant/sowResearchPrerequisites</xpath>
-              <success>Invert</success>
-            </li>
-
-            <li Class="PatchOperationAdd">
-              <xpath>Defs/ThingDef[defName="VCE_Taro"]/plant</xpath>
-              <value>
-                <sowResearchPrerequisites />
-              </value>
-            </li>
-          </operations>
-        </li>
-
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="VCE_Taro"]/plant/sowResearchPrerequisites</xpath>
-          <value>
-            <li>PLRWaterPlants</li>
-          </value>
-        </li>
-
         <!-- VPEMore watercress -->
         <li Class="PatchOperationSequence">
           <operations>
@@ -555,31 +531,6 @@
           <xpath>Defs/ThingDef[defName="VCE_Cucumber"]/plant/sowResearchPrerequisites</xpath>
           <value>
             <li>PLRSandPlants</li>
-          </value>
-        </li>
-
-        <!-- VPEMore butternut -->
-        <li Class="PatchOperationSequence">
-          <operations>
-            <li Class="PatchOperationTest">
-              <xpath>Defs/ThingDef[defName="VCE_ButternutSquash"]/plant/sowResearchPrerequisites</xpath>
-              <success>Invert</success>
-            </li>
-
-            <li Class="PatchOperationAdd">
-              <xpath>Defs/ThingDef[defName="VCE_ButternutSquash"]/plant</xpath>
-              <value>
-                <sowResearchPrerequisites />
-              </value>
-            </li>
-          </operations>
-        </li>
-
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="VCE_ButternutSquash"]/plant/sowResearchPrerequisites</xpath>
-          <value>
-            <li>PLRSandPlants</li>
-            <li>PLRSlow</li>
           </value>
         </li>
 

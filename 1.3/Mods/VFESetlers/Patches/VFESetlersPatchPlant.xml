@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+      <operations>
+        <!-- all diferent plants -->
+
+        <!-- VFEMedieval Grape-->
+        <li Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="Plant_Chemroot"]/plant/sowResearchPrerequisites</xpath>
+              <success>Invert</success>
+            </li>
+
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="Plant_Chemroot"]/plant</xpath>
+              <value>
+                <sowResearchPrerequisites />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Plant_Chemroot"]/plant/sowResearchPrerequisites</xpath>
+          <value>
+            <li>PLRChemicalProduction</li>
+          </value>
+        </li>
+
+      </operations>
+  </Operation>
+</Patch>

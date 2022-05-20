@@ -25,7 +25,6 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="VCE_TreeAvocado"]/plant/sowResearchPrerequisites</xpath>
           <value>
-            <li>PLRFruitTrees</li>
             <li>PLRSlow</li>
           </value>
         </li>
@@ -50,7 +49,6 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="VCE_TreeOlive"]/plant/sowResearchPrerequisites</xpath>
           <value>
-            <li>PLRFruitTrees</li>
             <li>PLRResistent</li>
           </value>
         </li>
@@ -75,7 +73,6 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="VCE_TreeCoconut"]/plant/sowResearchPrerequisites</xpath>
           <value>
-            <li>PLRFruitTrees</li>
             <li>PLRSandPlants</li>
           </value>
         </li>
@@ -100,36 +97,10 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="VCE_TreeAlmond"]/plant/sowResearchPrerequisites</xpath>
           <value>
-            <li>PLRFruitTrees</li>
             <li>PLRAdvanced</li>
           </value>
         </li>
 
-        <!-- VPEMore mango -->
-        <li Class="PatchOperationSequence">
-          <operations>
-            <li Class="PatchOperationTest">
-              <xpath>Defs/ThingDef[defName="VCE_TreeMango"]/plant/sowResearchPrerequisites</xpath>
-              <success>Invert</success>
-            </li>
-
-            <li Class="PatchOperationAdd">
-              <xpath>Defs/ThingDef[defName="VCE_TreeMango"]/plant</xpath>
-              <value>
-                <sowResearchPrerequisites />
-              </value>
-            </li>
-          </operations>
-        </li>
-
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="VCE_TreeMango"]/plant/sowResearchPrerequisites</xpath>
-          <value>
-            <li>PLRFruitTrees</li>
-          </value>
-        </li>
-
-        
 
       </operations>
   </Operation>
